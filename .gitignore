@@ -1,0 +1,6 @@
+#c++
+ipch
+Debug
+*.sdf
+*.user
+*.filters
