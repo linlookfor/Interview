@@ -3,8 +3,9 @@
 
 #include "stdafx.h"
 #include <vector>
+#include <iostream>
 using namespace std;
-
+int get_max_length(vector<int> &A);
 int _tmain(int argc, _TCHAR* argv[])
 {
 	vector<int> A;
@@ -15,6 +16,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	A.push_back(3);
 	A.push_back(2);
 	A.push_back(5);
+    cout<< "Array:";
+    for(vector<int>::iterator it=A.begin();it!=A.end();it++)
+    {
+        cout<<*it;
+        cout<<" ";
+    }
+    cout<<endl;
 	cout<<get_max_length(A)<<endl;
 	return 0;
 }
@@ -22,7 +30,7 @@ int _tmain(int argc, _TCHAR* argv[])
 int get_max_length(vector<int> &A)
 {
 	int n = A.size();
-	int pos_i,pos_j;
+	int pos_i = 0,pos_j = 0;
 	int max_length = 0;
 	for(int i=0; i < n; i++)
 	{
