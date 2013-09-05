@@ -33,7 +33,9 @@ int get_max_length(vector<int> &A)
 				pos_i = i;
 				pos_j = j;
 				max_length = j - i;
+				break;
 			}
 		}
 	}
+	return max_length;
 }
