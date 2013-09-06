@@ -23,7 +23,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	A.push_back(1);
 	A.push_back(4);
 	printArray(A);
-	cout<<"NonAdjutantElementMaxSum:"<<maxSum(A)<<endl;
+	cout<<"NonAdjacentElementMaxSum:"<<maxSum(A)<<endl;
 	return 0;
 }
 
