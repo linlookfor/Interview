@@ -7,7 +7,7 @@ Interview  Questions
 
 
 2.  max sum of not adjutant numbers  
-    question type: Array 
+    question type: Array  dynamic programming
     difficulty: 3 easy 
 suppose you are given an array of int. for example A[ ] = {1, - 1, 3, 8 ,4 } maximize the sum of subset such that
 if you include the number in sum, you may not use adjutant numbers to count in sum.
