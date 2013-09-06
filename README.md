@@ -6,7 +6,7 @@ Interview  Questions
 给出一个数组A，找出一对 (i, j)使得A[i] <= A[j] (i <= j)并且j-i最大 ，若有多个这样的位置对，返回i最小的那一对。
 
 
-2.  max sum of not adjutant numbers 
+2.  max sum of not adjutant numbers \t\r
     question type: Array 
     difficulty: 3 easy 
 suppose you are given an array of int. for example A[ ] = {1, - 1, 3, 8 ,4 } maximize the sum of subset such that
