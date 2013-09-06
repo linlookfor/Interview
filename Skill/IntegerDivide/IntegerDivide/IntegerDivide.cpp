@@ -23,21 +23,21 @@ int _tmain(int argc, _TCHAR* argv[])
 
 bool integerDivide(int x,int &a,int &b,int &c)
 {// 6a + 9b + 20c = x
-//  0<= a < 9
-//	0<= b < 20
-//  0<= c
-//==> 6*8 + 9*19 + 20c >= x
-//==>c>=(x-6*8-9*19)/20 && 0 <= c &&  c<=x/20
-	if (x<0)
+	//  0<= a < 9
+	// 0<= b < 20
+	//  0<= c
+	//==> 6*8 + 9*19 + 20c >= x
+	// ==> c>=(x-6*8-9*19)/20  &&  c>=0 && c <= x/20
+	if (x<;0)
 	{
 		return false;
 	}
 	for (c=max((x - 6*8 -9*19)/20,0);c <= x/20;c++)
-	{
+	{//implement (6*8+19*9 )/ 20 times at most
 		int left_x = x - 20 * c;
-		for (a=0;a<9;a++)
+		for (a=0;a<;9;a++)
 		{
-			for (b=0;b<20;b++)
+			for (b=0;b<;20;b++)
 			{
 				if(left_x == 6*a + 9*b)
 					return true;
